@@ -11,11 +11,12 @@ import UIKit
 class toDoListViewController: UITableViewController {
     
     var toDoArray = ["خرید صبحانه", "خشک شویی", "محل کار", "نهار", "استراحت عصر", "خرید خونه", "کفاشی", "فیلم"]
-    
+    let userData = UserDefaults.standard
 //    let toDoArray = ["one", "tow", "three", "for", "five", "six", "seven", "eight"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        toDoArray = userData.array(forKey: "myListAsArray") as! [String]
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -47,7 +48,7 @@ class toDoListViewController: UITableViewController {
         let alert = UIAlertController(title: "نام کار جدید", message: "", preferredStyle: .alert)
         let action = UIAlertAction(title: "اقزودن", style: .default) { (action) in
             self.toDoArray.append(newTxtField.text!)
-            print("\(newTxtField.text!) added")
+            self.userData.set(self.toDoArray, forKey: "myListAsArray")
             self.tableView.reloadData()
         }
         alert.addTextField { (txtField) in
