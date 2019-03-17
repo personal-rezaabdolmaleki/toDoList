@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1EB76392223DD52C007BEFD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB76391223DD52C007BEFD9 /* AppDelegate.swift */; };
-		1EB76394223DD52C007BEFD9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB76393223DD52C007BEFD9 /* ViewController.swift */; };
+		1EB76394223DD52C007BEFD9 /* toDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB76393223DD52C007BEFD9 /* toDoListViewController.swift */; };
 		1EB76397223DD52C007BEFD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EB76395223DD52C007BEFD9 /* Main.storyboard */; };
 		1EB76399223DD52C007BEFD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EB76398223DD52C007BEFD9 /* Assets.xcassets */; };
 		1EB7639C223DD52C007BEFD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EB7639A223DD52C007BEFD9 /* LaunchScreen.storyboard */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		1EB7638E223DD52C007BEFD9 /* toDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = toDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EB76391223DD52C007BEFD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1EB76393223DD52C007BEFD9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1EB76393223DD52C007BEFD9 /* toDoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = toDoListViewController.swift; sourceTree = "<group>"; };
 		1EB76396223DD52C007BEFD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1EB76398223DD52C007BEFD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1EB7639B223DD52C007BEFD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				1EB76391223DD52C007BEFD9 /* AppDelegate.swift */,
-				1EB76393223DD52C007BEFD9 /* ViewController.swift */,
+				1EB76393223DD52C007BEFD9 /* toDoListViewController.swift */,
 				1EB76395223DD52C007BEFD9 /* Main.storyboard */,
 				1EB76398223DD52C007BEFD9 /* Assets.xcassets */,
 				1EB7639A223DD52C007BEFD9 /* LaunchScreen.storyboard */,
@@ -135,7 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EB76394223DD52C007BEFD9 /* ViewController.swift in Sources */,
+				1EB76394223DD52C007BEFD9 /* toDoListViewController.swift in Sources */,
 				1EB76392223DD52C007BEFD9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,15 +282,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6AYPC4FR7S;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = toDoList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rezaabdolmaleki.third.toDoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,15 +303,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6AYPC4FR7S;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = toDoList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rezaabdolmaleki.third.toDoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
