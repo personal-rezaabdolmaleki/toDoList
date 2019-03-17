@@ -10,7 +10,7 @@ import UIKit
 
 class toDoListViewController: UITableViewController {
     
-    let toDoArray = ["خرید صبحانه", "خشک شویی", "محل کار", "نهار", "استراحت عصر", "خرید خونه", "کفاشی", "فیلم"]
+    var toDoArray = ["خرید صبحانه", "خشک شویی", "محل کار", "نهار", "استراحت عصر", "خرید خونه", "کفاشی", "فیلم"]
     
 //    let toDoArray = ["one", "tow", "three", "for", "five", "six", "seven", "eight"]
 
@@ -39,5 +39,24 @@ class toDoListViewController: UITableViewController {
         cell.textLabel?.text = toDoArray[indexPath.row]
         return cell
     }
+    
+    //Mark - alert for add to DoList
+    @IBAction func addToDoList(_ sender: UIBarButtonItem) {
+        
+        var newTxtField = UITextField()
+        let alert = UIAlertController(title: "نام کار جدید", message: "", preferredStyle: .alert)
+        let action = UIAlertAction(title: "اقزودن", style: .default) { (action) in
+            self.toDoArray.append(newTxtField.text!)
+            print("\(newTxtField.text!) added")
+            self.tableView.reloadData()
+        }
+        alert.addTextField { (txtField) in
+            txtField.placeholder = "اینجا وارد کنید"
+            newTxtField = txtField
+        }
+        alert.addAction(action)
+        present(alert,animated: true, completion: nil)
+    }
+    
 }
 

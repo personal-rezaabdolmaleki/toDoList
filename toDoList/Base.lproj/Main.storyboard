@@ -32,7 +32,14 @@
                             <outlet property="delegate" destination="aNQ-e5-ZbD" id="BUw-RQ-59t"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="کارهای امروز" id="rkK-rp-m6t"/>
+                    <navigationItem key="navigationItem" title="کارهای امروز" id="rkK-rp-m6t">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="yPJ-6V-15e">
+                            <color key="tintColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="addToDoList:" destination="aNQ-e5-ZbD" id="g62-GI-YCz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f2p-1J-1D7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
