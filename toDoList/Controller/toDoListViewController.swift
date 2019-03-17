@@ -93,9 +93,9 @@ class toDoListViewController: UITableViewController {
         item19.toDoName = "item19"
         toDoArrayClass.append(item19)
         
-        if let items = userData.array(forKey: "myListAsArray") as? [toDo] {
-            toDoArrayClass = items
-        }
+//        if let items = userData.array(forKey: "myListAsArray") as? [toDo] {
+//            toDoArrayClass = items
+//        }
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
