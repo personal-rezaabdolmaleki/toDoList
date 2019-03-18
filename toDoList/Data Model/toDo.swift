@@ -8,8 +8,7 @@
 
 import Foundation
 
-class toDo {
+class toDo : Codable {
     var toDoName : String = ""
     var isCheked : Bool = false
-    
 }
